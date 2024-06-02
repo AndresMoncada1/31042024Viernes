@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label fx:id="lblCodigo" layoutX="43.0" layoutY="117.0" text="Codigo:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="40.0" layoutY="193.0" text="Nombre:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmail" layoutX="48.0" layoutY="266.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDatospersona" layoutX="105.0" layoutY="33.0" text="DATOS PERSONA" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Text Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigo" layoutX="117.0" layoutY="113.0" />
+      <TextField fx:id="txtNombre" layoutX="117.0" layoutY="189.0" />
+      <TextField fx:id="txtEmail" layoutX="117.0" layoutY="262.0" />
+      <Accordion layoutX="54.0" layoutY="319.0" />
+      <Button fx:id="btnGuardar" layoutX="83.0" layoutY="339.0" mnemonicParsing="false" onAction="#guardarDatos" text="Guardar">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLimpiar" layoutX="334.0" layoutY="339.0" mnemonicParsing="false" onAction="#limpiarDatos" text="Limpiar">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Button>
+      <Pane layoutX="287.0" layoutY="113.0" prefHeight="161.0" prefWidth="160.0">
+         <children>
+            <TextArea fx:id="areaResultados" prefHeight="168.0" prefWidth="160.0" text="Resultados:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
